@@ -1,0 +1,127 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+h2{
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li{
+    /* #display: inline; */
+    float: left;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
+
+.active{
+    background-color: #04AA6D;
+}
+
+.product-card{
+    height: 279px;
+    background: rgb(255, 255, 255);
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 1px 3px 10px rgba(0,0,0,0.2);
+    border-radius: 25px;
+}
+
+.product-image{
+    overflow: hidden;
+    position: relative;
+    float: left;
+    height: 100%;
+    width: 23%;
+    margin: 0;
+    padding:0%;
+}
+
+.product-image img{
+    height: 100%;
+    display:block;              /*To center an image, 2 more lines*/
+    margin-left: auto;
+    margin-right: auto;
+    /* width: 100%; */
+    margin: auto!important;
+}
+
+.product-definition{
+    /* float: right;
+    text-align: left;
+    text-decoration:none;
+    margin: auto!important; */
+    width: calc(100% - 200px);
+    padding-left: 125px;
+    color: black;
+}
+
+.product-name h3{
+    font-size: 18pt;
+    text-decoration: none;
+    outline: none;
+    width: 58.33%;
+    margin-left: 25%;
+}
+
+.product-details{
+    margin-left: 25%;
+    margin-top: 5%;
+}
+
+.product-details ul{
+    text-decoration: none;
+    outline: none;
+    list-style-type: circle;
+}
+
+.product-details ul li{
+    float: none;
+    background-color: white;
+}
+
+.product-price{
+    margin-top:12px;
+    font-size: 18pt;
+    font-weight: bold;
+}
+
+a:link {
+    text-decoration: none!important;
+  }
+
+.Cat {
+    margin: 20px;
+}
+
+.Cat ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
