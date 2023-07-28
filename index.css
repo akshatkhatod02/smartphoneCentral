@@ -1,17 +1,23 @@
 *{
+    /* border: 1px solid gray; */
+    align-items: center;
     box-sizing: border-box;
 }
 
 body{
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
+    font-family: "Roboto Slab", sans-serif;
+}
+
+.product-card{
+    display: flex;
+    flex-wrap: wrap;
 }
 
 h2{
     text-align: center;
 }
 
-ul {
+.customNav {    
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -19,7 +25,7 @@ ul {
     background-color: #333;
   }
 
-li a {
+.customNav li a {
     display: block;
     color: white;
     text-align: center;
@@ -27,13 +33,23 @@ li a {
     text-decoration: none;
 }
 
-li{
+li a {
+    color: #0b5ed7;
+}
+
+.nav-pills .nav-link.active{
+    color: white;
+    background-color: #0b5ed7;
+    border-color: #0a58ca;
+}   
+
+.customNav li{
     /* #display: inline; */
     float: left;
 }
 
 /* Change the link color to #111 (black) on hover */
-li a:hover {
+.customNav li a:hover {
     background-color: #111;
 }
 
@@ -44,9 +60,10 @@ li a:hover {
 .product-card{
     height: 279px;
     background: rgb(255, 255, 255);
-    margin-left: 80px;
+    /* margin-left: 80px;
     margin-right: 80px;
-    margin-bottom: 20px;
+    margin-bottom: 20px; */
+    margin: 30px 120px;
     padding: 20px;
     box-shadow: 1px 3px 10px rgba(0,0,0,0.2);
     border-radius: 25px;
@@ -74,30 +91,26 @@ li a:hover {
 .product-definition{
     /* float: right;
     text-align: left;
-    text-decoration:none;
-    margin: auto!important; */
-    width: calc(100% - 200px);
-    padding-left: 125px;
-    color: black;
+    text-decoration:none;*/
+    /* margin: 10px 20px 30px 40px; */
+    /* width: 1023px; */
+    /* padding-left: 125px; */
+    text-align: center;
 }
 
 .product-name h3{
     font-size: 18pt;
+    /* font-weight: bold; */
     text-decoration: none;
     outline: none;
-    width: 58.33%;
-    margin-left: 25%;
+    /* width: 58.33%; */
+    /* margin-left: 25%; */
+    padding-bottom: 10px;
 }
 
 .product-details{
-    margin-left: 25%;
-    margin-top: 5%;
-}
-
-.product-details ul{
-    text-decoration: none;
-    outline: none;
-    list-style-type: circle;
+    align-items: center;
+    text-align: center;
 }
 
 .product-details ul li{
@@ -105,13 +118,27 @@ li a:hover {
     background-color: white;
 }
 
-.product-price{
-    margin-top:12px;
-    font-size: 18pt;
-    font-weight: bold;
+.product-details img{
+    width: 25px;
 }
 
-a:link {
+.product-details i{
+    font-size: 25px;
+}
+
+.product-details p{
+    font-size: 15px;
+    margin-bottom: 0px;
+}
+
+.product-price p{
+    /* margin-top:12px; */
+    font-size: 20pt;
+    font-weight: bold;
+    padding-top: 15px;
+}
+
+.customNav a:link {
     text-decoration: none!important;
   }
 
@@ -124,4 +151,21 @@ a:link {
     margin: 0;
     padding: 0;
     overflow: hidden;
+}
+
+.favourites{
+    text-align: center;
+}
+
+.favourites p{
+    margin-bottom: auto;
+}
+
+.favourites i{
+    font-size: 70px;
+    color: rgb(255, 90, 90);
+}
+
+.favourites .fav_text{
+    font-size: 20px;
 }
